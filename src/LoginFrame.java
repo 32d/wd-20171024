@@ -42,7 +42,7 @@ public class LoginFrame extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 if (IDtf.getText().equals("A")){
                     if((new String(Passtf.getPassword())).equals("1")){
-                        MainFrame lgf = new MainFrame();
+                        MainFrame lgf = new MainFrame(LoginFrame.this);
                         lgf.setVisible(true);
                         LoginFrame.this.setVisible(false);
                     }else{JOptionPane.showMessageDialog(null,"Password Error" );
